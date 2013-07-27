@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130713075003) do
+ActiveRecord::Schema.define(version: 20130727072751) do
+
+  create_table "links", force: true do |t|
+    t.string  "title"
+    t.integer "user_id"
+  end
 
   create_table "users", force: true do |t|
     t.string "email"
